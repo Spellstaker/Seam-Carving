@@ -71,7 +71,7 @@ class SeamCarve():
 
         return (seam_energy, seam)
 
-    def __carve(self, horizontal=True, seam=None, remove=True):
+    def __carve(self, horizontal=False, seam=None, remove=True):
         if horizontal:
             self.__swapaxes()
         
@@ -136,8 +136,8 @@ class SeamCarve():
         self.__energy_arr[mask] -= (self.__max_energy ** 2)
 
         while mp_count:
-            v_seam_energy, v_seam = self.__compute_seam(True)
-            h_seam_energy, h_seam = self.__compute_seam(False)
+            v_seam_energy, v_seam = self.__compute_seam(False)
+            h_seam_energy, h_seam = self.__compute_seam(True)
 
             horizontal, seam = False, v_seam
 

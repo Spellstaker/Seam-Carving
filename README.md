@@ -27,6 +27,4 @@ cv2.imshow('resized', sc_img.image())
 cv2.waitKey(0)
 ```
 
-![Original](./Example/test.png)
-
-![Resized](./Example/resized.png)
+![Original](./Example/test.png) ![Resized](./Example/resized.png)
