@@ -40,7 +40,7 @@ sc_img.resize(new_height, new_width)
 sc_img.remove_mask(mask)
 ```
 
-### Retrie Image Array
+### Retrieve Image Array
 
 ```python
 sc_img.image()
