@@ -118,7 +118,7 @@ class SeamCarve():
 
         return mp_deleted_count
 
-    def rescale(self, new_height=None, new_width=None):
+    def resize(self, new_height=None, new_width=None):
         if new_height is None:
             new_height = self.__height
         if new_width is None:
