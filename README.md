@@ -4,7 +4,7 @@
 
 This project implements the method described in the paper: <http://www.cs.jhu.edu/~misha/ReadingSeminar/Papers/Avidan07.pdf>
 
-It provides image resizing and object removal given a 2d boolean numpy array.
+It provides image resizing, and object removal given a 2d boolean numpy array.
 
 The energy function used is the sum of absolute difference of horizontal and vertical adjacent pixels.
 
@@ -30,11 +30,15 @@ sc_img = SeamCarve(img)
 
 ### Resizing
 
+Reduces width first, and then height.
+
 ```python
 sc_img.resize(new_height, new_width)
 ```
 
 ### Object Removal
+
+Pixel coordinates with a `True` value will be removed.
 
 ```python
 sc_img.remove_mask(mask)
