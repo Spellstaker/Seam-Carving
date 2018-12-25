@@ -77,6 +77,7 @@ class SeamCarve():
         
         if seam is None:
             seam = self.__compute_seam()[1]
+            
         if remove:
             self.__width -= 1
         else:
