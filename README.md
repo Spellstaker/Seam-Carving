@@ -12,14 +12,14 @@ The energy function used is the sum of absolute difference of horizontal and ver
 
 Images are represented as 3d numpy arrays. They can be read using various libraries, [OpenCV](https://pypi.org/project/opencv-python/) is used here.
 
-Example: Resizing a 540 x 540 image to 400 x 700
+Example: Resizing a 400 x 400 image to 300 x 300
 ```python
 import cv2
 from seam import SeamCarve
 
 img = cv2.imread('test.png')
 sc_img = SeamCarve(img)
-sc_img.rescale(new_height=400, new_width=700)
+sc_img.rescale(new_height=300, new_width=300)
 
 
 cv2.imshow('original', img)
