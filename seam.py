@@ -30,8 +30,8 @@ class SeamCarve():
         return energy
 
     def __swapaxes(self):
-        np.swapaxes(self.__energy_arr, 0, 1)
-        np.swapaxes(self.__arr, 0, 1)
+        self.__energy_arr = np.swapaxes(self.__energy_arr, 0, 1)
+        self.__arr = np.swapaxes(self.__arr, 0, 1)
         self.__height, self.__width = self.__width, self.__height
 
     def __compute_energy_arr(self):
