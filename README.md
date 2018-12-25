@@ -87,4 +87,5 @@ cv2.waitKey(0)
 ```
 
 ![Original](./Example/test.png) ![Mask](./Example/mask.png)
+
 ![Removed](./Example/removed.png)
